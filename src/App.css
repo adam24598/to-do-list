@@ -1,38 +1,38 @@
-.App {
-  text-align: center;
+body,
+* {
+  font-size: 24px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+label {
+  font-size: 16px;
+  margin-bottom: 0.5rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+  padding: 2rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.todo-input {
+  border-radius: 5px;
+  border: 2px solid #ddd;
+  box-shadow: 1px #777;
+}
+
+.todo-completed {
+  text-decoration: line-through;
+}
+
+.add-btn {
+  margin: 0 0.5rem;
+  background-color: mediumseagreen;
   color: white;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.delete-btn {
+  margin: 0 0.5rem;
+  cursor: pointer;
+  font-weight: bold;
+  color: red;
 }
